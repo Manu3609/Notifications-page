@@ -74,7 +74,7 @@ header a:hover {
 .notifications .notification .texts {
     display: flex;
     flex-direction: column;
-    gap: .2rem;
+    gap: .09rem;
     color: var(--DarkGrayishBlue);
     /* position: relative; */
 }
@@ -86,7 +86,11 @@ header a:hover {
 .notifications .notification .texts .username {
     color: var(--VeryDarkBlue);
 }
-.notifications .notification .texts .username:hover {
+.notifications .notification:nth-child(3) .texts .link {
+    color: var(--Blue);
+}
+.notifications .notification .texts .username:hover,
+.notifications .notification .texts .link:hover {
     color: var(--Blue);
 }
 .notifications .notification.unread .texts p:first-child::after {
@@ -95,9 +99,7 @@ header a:hover {
     height: 7px;
     background: var(--Red);
     border-radius: 50%;
-    display: flex;
-    flex-direction: row;
-    position: static;
-    /* top: 50px; */
-    /* top: 50%; */
+    display: inline-block;
+    margin-left: .5rem;
+    margin-bottom: .07rem;
 }
