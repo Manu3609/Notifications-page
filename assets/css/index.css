@@ -4,7 +4,7 @@
     --White : hsl(0, 0%, 100%);
     --VeryLightGrayishBlue : hsl(210, 60%, 98%);
     --LightGrayishBlue1 : hsl(211, 68%, 94%);
-    --LightGrayishBlue2 : hsl(205, 33%, 90%)
+    --LightGrayishBlue2 : hsl(205, 33%, 90%);
     --GrayishBlue : hsl(219, 14%, 63%);
     --DarkGrayishBlue : hsl(219, 12%, 42%);
     --VeryDarkBlue : hsl(224, 21%, 14%);
@@ -40,6 +40,7 @@ header .title .badge {
     color: var(--White);
     padding: .2rem .7rem;
     border-radius: .4rem;
+    margin-top: .3rem;
 }
 header a {
     color: var(--DarkGrayishBlue);
@@ -61,7 +62,7 @@ header a:hover {
     border-radius: .5rem;
     padding: 1rem 1.4rem;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     gap: 1.5rem;
 }
 .notifications .notification.unread {
@@ -76,7 +77,11 @@ header a:hover {
     flex-direction: column;
     gap: .09rem;
     color: var(--DarkGrayishBlue);
+    width: 100%;
     /* position: relative; */
+}
+.notifications .notification .texts .postTime {
+    color: var(--GrayishBlue);
 }
 .notifications .notification .texts a {
     font-weight: 900;
@@ -86,7 +91,8 @@ header a:hover {
 .notifications .notification .texts .username {
     color: var(--VeryDarkBlue);
 }
-.notifications .notification:nth-child(3) .texts .link {
+.notifications .notification:nth-child(3) .texts .link,
+.notifications .notification:nth-child(7) .texts .link {
     color: var(--Blue);
 }
 .notifications .notification .texts .username:hover,
@@ -102,4 +108,39 @@ header a:hover {
     display: inline-block;
     margin-left: .5rem;
     margin-bottom: .07rem;
+}
+.notifications .notification .texts .message {
+    max-width: 80%;
+    border: 1px solid var(--GrayishBlue);
+    padding: 1rem;
+    border-radius: .2rem;
+    align-self: flex-end;
+    margin-top: 1rem;
+    cursor: pointer;
+    transition: .5s ease;
+}
+.notifications .notification .texts .message:hover {
+    background: var(--LightGrayishBlue1);
+    border: 1px solid #ffffff00;
+}
+/* FOR POST WITH THUMBNAIL */
+.notifications .notification.withThumbnail .texts {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.notifications .notification.withThumbnail .texts img {
+    cursor: pointer;
+    border-radius: .5rem;
+    transition: .5s ease;
+}
+.notifications .notification.withThumbnail .texts img:hover {
+    box-shadow: 0 0 5px var(--GrayishBlue);
+}
+@media only screen and (max-width: 450px) {
+    header h1 {
+        font-size: 1.2rem;
+        font-weight: 900;
+    }
 }
