@@ -39,6 +39,6 @@ Users should be able to:
 
 ## Author
 
-- Website - [Fanantenana Emmanuel](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Instagram - [@manustxrk](https://www.twitter.com/yourusername)
+- Github - [Fanantenana Emmanuel](https://github.com/Manu3609/)
+- Frontend Mentor - [@Manu3609](https://www.frontendmentor.io/profile/Manu3609)
+- Instagram - [@manustxrk](https://www.instagram.com/manustxrk/)
