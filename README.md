@@ -7,6 +7,7 @@ This is a solution to the [Notifications page challenge on Frontend Mentor](http
 - [Frontend Mentor - Notifications page solution](#frontend-mentor---notifications-page-solution)
   - [Table of contents](#table-of-contents)
   - [Overview](#overview)
+    - [Screenshot](#screenshot)
     - [The challenge](#the-challenge)
     - [Links](#links)
   - [My process](#my-process)
@@ -14,6 +15,11 @@ This is a solution to the [Notifications page challenge on Frontend Mentor](http
   - [Author](#author)
 
 ## Overview
+
+### Screenshot
+
+![](./assets/images/Notifications-page-Fanantenana-Emmanuel.png)
+
 
 ### The challenge
 
